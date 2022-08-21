@@ -94,13 +94,7 @@ img {
     transition: var(--transition);
 }
 
-.btn:hover {
-    background: transparent;
-    color: var(--color-white);
-    border-color:var(--color-white);
 
-
-}
 
 .btn-primary {
     background-color: #7ec4bd;
@@ -117,11 +111,7 @@ nav {
 
 
 }
-/* 
-change nav bar style using js */
-.contact-section-container {
-    background-color: #7ec4bd;
-}
+
 .nav_container {
     background-color: white;
     height: 100%;
@@ -166,9 +156,6 @@ header{
 
 }
 
-.form-section {
-    background-color: black;
-}
 
 .header_container {
     background-color: #f5f7fa;
@@ -181,16 +168,8 @@ header{
 p {
     color: black;
 }
-.contactform {
-    margin-left: 40%;
-    margin-right: 40%;
-    align-items: center;
-}
-form input {
-width: 300px;
-height: 30px;
-margin-bottom: 2%;
-}
+
+
 
 .header_left p  {
     margin: 1rem 0 2.4rem ;
@@ -219,9 +198,6 @@ article {
     
 }
 
-.box:hover {
-    background: #7ec4bd;
-    box-shadow: 2px 2px 2px solid green; }
 
     .contact-section {
         background-color: #7ec4bd;
@@ -242,34 +218,53 @@ article {
     grid-template-columns: repeat(2,1fr);
 }
 .bank-detail {
-    text-align: center;
+    width: 300px;
+margin-bottom: 2%;
+   margin-left: 70%;
+}
+.bank-image {
+    align-items:center;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 2%;
+   margin-left: 85%;
+   margin-top: 5%;
+}
+.bank-icon-name {
+    margin-left: 86%;
 }
 @media ( max-width:450px){
 .nav_menu{
     display: none;
 }  
 .container {
-    height: fit-content;
-    
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;}
 
 .header_container {
+    margin-top: 10%;
     overflow-y: scroll;
     height: fit-content;
 
 
 }
-.contactform{
-    margin-left: 20%;
+.bank-detail {
+    width: 250px;
+    margin-left: 0;;
+}
+.bank-image {
+    
+    height: 70px;
+    width: 70px;
+    margin-bottom: 2%;
+   margin-left: 26%;
+  
+}
+.bank-icon-name {
+    margin-left: 27%;
 }
 
-.header_right-image{
-    margin-top: 0;
-    display: flex;
-    height: fit-content;
-    overflow: scroll;
-}
 .menu-buttons{
     display: flex;
     flex-direction: row;
@@ -277,6 +272,10 @@ article {
 .support-us{
     text-align: center;
 }
-
+.paytm-image{
+    width: 200px;
+    height: 200px;
+    margin-top: -97px;
 }
 
+}
