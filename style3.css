@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: blue; 
+    --color-success:green;
+    --color-warnings:yellow;
+    --color-danger: red;
+    --color-danger-variant: orange;
+    --color-white: white;
+    --color-light: gray;
+    --color-black: black;
+    --color-bg: rgb(144, 205, 219);
+    --color-bg1: beige;
+    --color-bg2: lightblue;
+    
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
+    color: var(--color-white );
+}
+   
+.container {
+    background-color: #f5f7fa;
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    padding: 3.4%;
+}
+
+section {
+    padding: 6rem 0;
+
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+h1,h2,h3,h4,h5 {
+    line-height: 1.2;
+}
+h1 {
+    color: black;
+    font-size: 2.4rem; 
+}
+h2 {
+    color: black;
+    font-size: 2rem; 
+}
+h3 {
+    color: black;
+    font-size: 1.6rem; 
+}
+h4 {
+    color: black;
+    font-size: 1.3rem; 
+}
+
+a {
+    color: black
+
+}
+img {
+    width: 100%;
+    display: block;
+
+}
+.about-image {
+    border-radius: 250px;
+    height: 300px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: black;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color:var(--color-white);
+
+
+}
+
+.btn-primary {
+    background-color: #7ec4bd;
+    color: black
+}
+nav {
+    background:transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+
+
+
+}
+/* 
+change nav bar style using js */
+.contact-section-container {
+    background-color: #7ec4bd;
+}
+.nav_container {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form {
+    background-color: black;
+    color: white;
+}
+.form-section {
+    background-color: black;
+}
+
+
+nav button {
+    display: none;
+    
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav_menu a {
+    font-size: 0.9 rem;
+    transition: all 1s ease;
+}
+
+.nav_menu a:hover {
+    color: blue;
+}
+
+header{
+    position:  relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+
+}
+
+.form-section {
+    background-color: black;
+}
+
+.header_container {
+    background-color: #f5f7fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+p {
+    color: black;
+}
+.contactform {
+    margin-left: 40%;
+    margin-right: 40%;
+    align-items: center;
+}
+form input {
+width: 300px;
+height: 30px;
+margin-bottom: 2%;
+}
+
+.header_left p  {
+    margin: 1rem 0 2.4rem ;
+
+}
+
+
+   
+article {
+    
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.boxes {
+    margin-top: 10rem;
+
+}
+.boxes_container {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+}
+.box {
+    text-align: center;
+    
+}
+
+.box:hover {
+    background: #7ec4bd;
+    box-shadow: 2px 2px 2px solid green; }
+
+    .contact-section {
+        background-color: #7ec4bd;
+        text-align: center;
+        
+    }
+    
+    .contact-section:hover {
+        background: #7ec4bd;
+        box-shadow: 2px 2px 2px solid green; }
+
+.banks {
+    margin-top: 10rem;
+}
+
+.banks_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.bank-detail {
+    text-align: center;
+}
+@media ( max-width:450px){
+.nav_menu{
+    display: none;
+}  
+.container {
+    height: fit-content;
+    
+    display: flex;
+    flex-direction: column;}
+
+.header_container {
+    overflow-y: scroll;
+    height: fit-content;
+
+
+}
+.contactform{
+    margin-left: 20%;
+}
+
+.header_right-image{
+    margin-top: 0;
+    display: flex;
+    height: fit-content;
+    overflow: scroll;
+}
+.menu-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.support-us{
+    text-align: center;
+}
+
+}
+
