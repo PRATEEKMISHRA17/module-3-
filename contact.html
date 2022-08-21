@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Support
+  </title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="hi">
+
+  <div class="main">
+    <div class="slider-container">
+      
+
+      <a href="#" class="slider-trigger">
+        <img class="image-logo" src="NEmalogo.jpeg" alt="">
+        <img class="image-menu" src="2976215.png" alt="">
+      </a>
+
+      <div class="slider-parent">
+        <h1></h1>
+        <a href="">HOME</a> <br><br>
+        <a href="">HOW IT WORKS</a> <br><br>
+        <a href="">VISION</a> <br><br>
+        <a href="">TEAM</a> <br><br>
+        <a href="">CONTACT</a> <br><br>
+      </div>
+    </div>
+    <ul>
+      <!-- Image icon here -->
+      <ul class="list">
+        <li><a href=""><img class="logo-image" src="NEmalogo.jpeg" alt="nemaai"></a></li>
+
+      </ul>
+
+      <ul class="list2">
+        <li><a href="">HOW IT WORKS</a></li>
+        <li><a href="">VISION</a></li>
+        <li><a href="">TEAM</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li><a style="color:#0082f3 ;" href="">DONATE</a></li>
+      </ul>
+    </ul>
+
+    </ul>
+  </div>
+  <section class="support-section">
+    <div class="container">
+      <h1 class="support-us">Support Us</h1>
+      <p>Engage with us through Corporate Social Responsibility and Support a neurologically diverse and inclusive
+        society</p>
+      <p>100 % Tax exemption available on any CSR or donation made under Section 135(1) of the companies Act,2013</p>
+      <a href="https://paytm.me/cgU4-ud" target="_blank" class="button-primary w-button">Donate</a>
+    </div>
+    <div class="img-div">
+      <img src="Nema_AI-removebg-preview.png" alt="" height="500px" width="650px
+      ">
+    </div>
+  </section>
+  <script>
+    var sliderTrigger = document.getElementsByClassName("slider-trigger")[0];
+    var slider = document.getElementsByClassName('slider-parent')[0];
+
+    sliderTrigger.addEventListener("click", function (el) {
+
+      if (slider.classList.contains("active")) {
+        slider.classList.remove("active");
+      } else {
+        slider.classList.add("active");
+      }
+
+    });
+  </script>
+</body>
+
+</html>
