@@ -1,0 +1,242 @@
+.hi {
+  --color-primary: green;
+  --color-primary-dark: rgb(38, 81, 38);
+  --color-secondary: purple;
+  --color-error: red;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: white;
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  max-width: 400px;
+  padding: 2rem;
+  /* box-shadow: 0 0 40px blue; */
+  background-color: #f5f7fa;
+  border-radius: 4px;
+  font: 500 1rem "quicksand", sans-serif;
+  padding: 10%;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  max-width: 1550px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+ul li {
+  display: inline;
+}
+
+.list {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 9px;
+}
+
+.list2 {
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  float: left;
+  margin-left: 50%;
+  font-family: Montserrat, sans-serif;
+}
+
+.list2 li a {
+  text-decoration: none;
+  color: grey;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.9s ease;
+}
+
+.list2 li a:hover {
+  border-bottom: solid #7ec4bd;
+  color: #000;
+}
+.slider-container {
+  display: none;
+}
+
+.logo-image {
+  width: 100px;
+  height: 90px;
+  margin-left: 10px;
+}
+
+.support-section {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-right: 20%;
+  margin-top: 100px;
+  background-color: #f5f7fa;
+}
+.img-div {
+  background-color: #f5f7fa;
+  margin-left: 10%;
+}
+
+p {
+  font-size: 25px;
+  width: 550px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.button-primary {
+  margin-left: 10%;
+  margin-top: 15px;
+  text-decoration: none;
+  padding: 12px 25px;
+  border: 1px solid #7ec4bd;
+  background-color: #7ec4bd;
+  transition: all 200ms ease;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media (max-width: 1276px) {
+  .support-section {
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 80%;
+    width: 85%;
+  }
+  .logo-image{
+    display: none;
+  }
+  .list2 {
+    display: none;
+  }
+  .button-primary {
+    margin-top: 35px;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 1px solid #7ec4bd;
+    background-color: #7ec4bd;
+    transition: all 200ms ease;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .main {
+    overflow: visible;
+    display: block;
+    height: 12%;
+  }
+  .slider-container {
+    position: relative;
+    display: block;
+  }
+  .slider-container .slider-parent {
+    background-color: #7ec4bd;
+    height: 350px;
+    max-width: 390px;
+    width: 300px;
+    
+    background:#7ec4bd;
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    visibility:hidden;
+    opacity: 1;
+    pointer-events: none;
+    transition: 0.2s all linear;
+  }
+  .slider-parent{
+    background-color: #7ec4bd;
+  }
+  .slider-container .slider-parent.active {
+    background-color: #7ec4bd;
+    visibility: visible;
+    pointer-events: inherit;
+    transition: 0.2s all ease-in-out;
+    opacity: 1;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 10%;
+    padding-right: 30%;
+    padding-left: 30%;
+    
+    font-size: 30px;
+    border-radius: 10px;
+    
+  }
+  a{
+    
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10%;
+    
+  }
+  .image-menu {
+    height: 150px;
+    width: 150px;
+    padding: 15%;
+    left: 0;
+  }
+}
+a {
+  color: black;
+}
+
+.support-us {
+  margin-left: 50%;
+}
+.slider-trigger{
+  display: flex;
+  flex-direction: column;
+}
+.image-menu{
+  height: 90px;
+  width: 90px;
+  margin-left: 70%;
+  margin-top: -25%;
+
+}
+.image-logo{
+  height: 110px;
+  width: 100px;
+  margin-left: 5%;
+  margin-top: -7%;
+
+}
