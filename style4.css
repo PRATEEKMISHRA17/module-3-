@@ -44,7 +44,9 @@ section {
     padding: 6rem 0;
 
 }
-
+.menu-icon {
+    display: none;
+}
 section h2 {
     text-align: center;
     margin-bottom: 4rem;
@@ -119,14 +121,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-form {
-    background-color: black;
-    color: white;
-}
-.form-section {
-    background-color: black;
-}
-
 
 nav button {
     display: none;
@@ -246,6 +240,9 @@ margin-bottom: 2%;
     margin-top: 10%;
     overflow-y: scroll;
     height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 6rem;
 
 
 }
@@ -261,6 +258,7 @@ margin-bottom: 2%;
    margin-left: 26%;
   
 }
+
 .bank-icon-name {
     margin-left: 27%;
 }
@@ -273,8 +271,8 @@ margin-bottom: 2%;
     text-align: center;
 }
 .paytm-image{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     margin-top: -97px;
 }
 
